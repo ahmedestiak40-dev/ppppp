@@ -1,0 +1,139 @@
+import { PortfolioData } from '../types/portfolio.ts';
+
+export const defaultPortfolioData: PortfolioData = {
+  profile: {
+    name: "Estiak Ahmed",
+    title: "Full-Stack Software Engineer & Solution Architect",
+    tagline: "Architecting high-performance web applications with React, Node.js, and MongoDB.",
+    bio: "I am a dedicated Full-Stack Developer with deep expertise in crafting responsive, resilient, and data-driven modern web applications. From building intuitive React interfaces to architecting scalable Node.js microservices and optimizing MongoDB aggregation pipelines, I transform complex business requirements into elegant digital experiences.",
+    location: "Dhaka, Bangladesh",
+    email: "estiak160@gmail.com",
+    phone: "+880 1700-000000",
+    github: "https://github.com/estiak-ahmed",
+    linkedin: "https://linkedin.com/in/estiak-ahmed",
+    twitter: "https://x.com/estiak_dev",
+    resumeUrl: "#",
+    avatarUrl: "/src/assets/images/estiak_portrait_1790980564550.jpg",
+    availabilityStatus: "Open for freelance projects & full-time opportunities",
+    yearsExperience: 4,
+    completedProjects: 28,
+    happyClients: 19
+  },
+  projects: [
+    {
+      id: "proj-1",
+      title: "PulseStore - Cloud E-Commerce Engine",
+      tagline: "High-throughput headless e-commerce system with dynamic catalog and real-time inventory management.",
+      description: "A production-grade full-stack commerce engine featuring seamless checkout, Stripe payments, role-based vendor dashboard, and automated inventory sync with MongoDB transactions.",
+      longDescription: "PulseStore was architected to handle high concurrent traffic with fast server-side rendering, sub-100ms response latencies, and real-time inventory tracking using MongoDB change streams and WebSockets. Includes administrative audit logging, sales telemetry, and automated invoice generation.",
+      category: "Full-Stack",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Redis"],
+      imageUrl: "/src/assets/images/project_ecommerce_platform_1790980576870.jpg",
+      liveUrl: "https://example.com/pulsestore",
+      githubUrl: "https://github.com/estiak-ahmed/pulsestore-fullstack",
+      featured: true,
+      order: 1,
+      highlights: [
+        "Architected ACID compliant checkout with MongoDB transactional sessions",
+        "Sub-100ms catalog search with MongoDB compound indexing and Redis caching",
+        "Comprehensive vendor analytics with dynamic sales charts"
+      ]
+    },
+    {
+      id: "proj-2",
+      title: "ApexMetrics - Server Telemetry Platform",
+      tagline: "Real-time distributed cloud server monitoring and system telemetry dashboard.",
+      description: "Scalable monitoring solution ingesting health pings, CPU/RAM utilization metrics, and HTTP request logs across microservices with instant anomaly alert dispatches.",
+      longDescription: "ApexMetrics provides devops and systems engineers with a unified single-pane interface for visualizing server cluster health. Built with a high-throughput Node.js streaming ingestion pipeline, MongoDB timeseries collections, and interactive React charting widgets.",
+      category: "Backend & API",
+      technologies: ["Node.js", "Express", "MongoDB TimeSeries", "React", "WebSockets"],
+      imageUrl: "/src/assets/images/project_analytics_dashboard_1790980588753.jpg",
+      liveUrl: "https://example.com/apexmetrics",
+      githubUrl: "https://github.com/estiak-ahmed/apexmetrics-telemetry",
+      featured: true,
+      order: 2,
+      highlights: [
+        "Ingests 10,000+ data points per minute with buffered MongoDB writes",
+        "Real-time WebSocket telemetry stream with automatic fallback polling",
+        "Custom query builder for latency percentiles (p50, p95, p99)"
+      ]
+    },
+    {
+      id: "proj-3",
+      title: "TeamSync - Collaborative Workspace",
+      tagline: "Real-time kanban boards, markdown sprint docs, and persistent asynchronous team chat.",
+      description: "An intuitive collaborative workspace platform designed for distributed engineering teams. Features drag-and-drop task boards, document editor, and instant presence indicators.",
+      longDescription: "TeamSync replaces fragmented tools with a consolidated workspace. Built on React with optimistic UI updates and an Express backend backed by MongoDB document versioning for conflict-free multi-user edits.",
+      category: "Full-Stack",
+      technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
+      imageUrl: "/src/assets/images/project_collaborative_workspace_1790980601560.jpg",
+      liveUrl: "https://example.com/teamsync",
+      githubUrl: "https://github.com/estiak-ahmed/teamsync-workspace",
+      featured: true,
+      order: 3,
+      highlights: [
+        "Optimistic UI updates for zero-lag drag-and-drop task management",
+        "Fine-grained role-based access control (Admin, Member, Viewer)",
+        "Automated activity audit log with MongoDB aggregation pipelines"
+      ]
+    }
+  ],
+  skills: [
+    { id: "sk-1", name: "React.js / Next.js", category: "Frontend", proficiency: 94 },
+    { id: "sk-2", name: "TypeScript / JavaScript", category: "Frontend", proficiency: 92 },
+    { id: "sk-3", name: "Tailwind CSS & Modern UI", category: "Frontend", proficiency: 95 },
+    { id: "sk-4", name: "Node.js & Express", category: "Backend & Database", proficiency: 92 },
+    { id: "sk-5", name: "MongoDB & Mongoose", category: "Backend & Database", proficiency: 90 },
+    { id: "sk-6", name: "RESTful API Architecture", category: "Backend & Database", proficiency: 93 },
+    { id: "sk-7", name: "Authentication & JWT/OAuth", category: "Backend & Database", proficiency: 88 },
+    { id: "sk-8", name: "Git & GitHub Workflow", category: "DevOps & Tools", proficiency: 90 },
+    { id: "sk-9", name: "Docker & Containerization", category: "DevOps & Tools", proficiency: 82 },
+    { id: "sk-10", name: "Performance & Optimization", category: "Architecture", proficiency: 89 },
+    { id: "sk-11", name: "Database Schema Design", category: "Architecture", proficiency: 91 },
+    { id: "sk-12", name: "State Management (Redux/Zustand)", category: "Frontend", proficiency: 88 }
+  ],
+  experiences: [
+    {
+      id: "exp-1",
+      role: "Senior Full-Stack Engineer",
+      company: "Nexus Technologies",
+      period: "2023 - Present",
+      description: "Leading frontend and backend development for core enterprise client web portals and distributed services.",
+      highlights: [
+        "Spearheaded redesign of client portal in React & Node.js, improving page load speeds by 46%",
+        "Designed MongoDB schemas and aggregation pipelines reducing reporting latency by 60%",
+        "Mentored junior developers in writing testable TypeScript and secure REST APIs"
+      ],
+      type: "work",
+      order: 1
+    },
+    {
+      id: "exp-2",
+      role: "Full-Stack Web Developer",
+      company: "Innovate Digital Labs",
+      period: "2021 - 2023",
+      description: "Developed and maintained full-stack JavaScript applications with Express, MongoDB, and React.",
+      highlights: [
+        "Built over 15 dynamic web applications and custom administrative dashboards",
+        "Implemented secure JWT authentication, session caching, and third-party payment gateways",
+        "Collaborated closely with UX designers to deliver pixel-perfect accessible interfaces"
+      ],
+      type: "work",
+      order: 2
+    },
+    {
+      id: "exp-3",
+      role: "B.Sc. in Computer Science & Engineering",
+      company: "University of Engineering & Technology",
+      period: "2017 - 2021",
+      description: "Focused on Data Structures, Algorithms, Software Engineering, Database Systems, and Distributed Computing.",
+      highlights: [
+        "Graduated with honors in Computer Science and Software Systems",
+        "Published final year thesis on distributed document indexing and caching strategies",
+        "President of the University Competitive Programming and Web Development Club"
+      ],
+      type: "education",
+      order: 3
+    }
+  ]
+};
